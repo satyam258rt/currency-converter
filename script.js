@@ -5,10 +5,14 @@ const dropdown = document.querySelectorAll(".dropdown select");
 
 for (const ele of dropdown) {
   for (const code in countryList) {
-   let option = document.createElement("opt");
+   let option = document.createElement("option"); // valid tag needed
    option.innerText = code;
    option.value= code;
    ele.append(option);
 
   }
+  ele.addEventListener("change",getflag){
+    
+  }
+  
 }
